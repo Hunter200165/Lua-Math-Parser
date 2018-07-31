@@ -34,7 +34,7 @@ Math equations parser written in pure Lua
 4) `a ** b` -  Exponential operator: Raises `a` to the exponent of `b`. Same as `pow[ a, b ]`;
 5) Integer division operators:
     - `a div b` - DIV operator;
-    - `a \\ b` - DIV operator (C-style);
+    - `a // b` - DIV operator (C-style);
 6) Modulus operators:
     - `a mod b` - MOD operator;
     - `a % b` - MOD operator (C-style);
