@@ -18,3 +18,14 @@ Math equations parser written in pure Lua
     - `ceil[ a ]` - Returns ceil-rounded representation of `a`;
     - `rad[ a ]` - Returns converted to radians `a`;
     - `deg[ a ]` - Returns converted to degrees `a`;
+3) Logical operators, all operators are bit-based (All is shown in decreasing order)
+    - `not a` - NOT operator;
+    - `!a` - NOT operator (C-style);
+    - `a and b` - AND operator;
+    - `a && b` - AND operator (C-style);
+    - `a or b` - OR operator;
+    - `a || b` - OR operator (C-style);
+    - `a shl b` - Shift Left operator;
+    - `a << b` - Shift Left operator (C-style);
+    - `a shr b` - Shift Right operator;
+    - `a >> b` - Shift Right operator (C-style);
