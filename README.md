@@ -4,7 +4,7 @@ Math equations parser written in pure Lua
 # Usage of parser 
 (Priorities of operations are decresing from up to down)
 1) `(...)` - All between brackets will be evaluated recursively
-2) `<Function_Name>[<Argument1>, <Argument2>; <Argument3>]` - Then any functions functions will be evaluated. Note: there is no space between `<Function_Name>` and `[`, but other whitespace characters are ignored.
+2) `<Function_Name>[<Argument1>, <Argument2>; <Argument3>]` - Then any functions will be evaluated. Note: there is no space between `<Function_Name>` and `[`, but other whitespace characters are ignored.
     - `pow[ a, b ]` - Raises `a` to the exponent of `b`;
     - `sqrt[ a ]` - Calculates square root out of `a`;
     - `abs[ a ]` - Returns non-negative representation of `a`;
@@ -46,3 +46,10 @@ Math equations parser written in pure Lua
 8) Equality operators (return 1 if equal, 0 otherwise):
     - `a = b` - Equality operator;
     - `a == b` - Equality operator (C-style);
+    
+#Usage example
+- `floor[ sqrt[ pow[ 2, log[ 154 ] ] ] ]` - Useless math
+- `sqrt[ 3**2 + 4**2 ]` - Pythagoras rule
+- `(238 && 156) == (238 and 156)` - Test logic
+- `((238 && 156) == (238 and 156)) << (2 xor 1) = ((154 || 12) == (154 or 12)) shl (1 ^ 2)` - Advanced logic test
+- `((23 ** 2 div 2) == (23 ** 2 // 2)) && (((15 mod 2 << 1) >> 2) == ((15 % 2 shl 1) shr 2))` - Logic and arithmetics
