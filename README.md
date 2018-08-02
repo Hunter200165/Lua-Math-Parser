@@ -18,6 +18,11 @@ Math equations parser written in pure Lua
     - `ceil[ a ]` - Returns ceil-rounded representation of `a`;
     - `rad[ a ]` - Returns converted to radians `a`;
     - `deg[ a ]` - Returns converted to degrees `a`;
+    - `bits[ a, b ]` - Casts `a` to `b` amount of bits;
+    - `bit[ a ]` - Casts `a` to one bit;
+    - `byte[ a ]` - Casts `a` to one byte;
+    - `word[ a ]` - Casts `a` to two bytes;
+    - `int[ a ]` - Casts `a` to four bytes;
 3) Logical operators, all operators are bit-based (All is shown in priority decreasing order)
     - `not a` - NOT operator;
     - `!a` - NOT operator (C-style);
