@@ -57,11 +57,11 @@ Math equations parser written in pure Lua
     - `a || b` - OR operator
     - `a !^ b` - XOR operator
     
-#Constants
+# Constants
 - `$pi` = `math.pi`;
 - `$e` = `math.exp(1)`;
     
-#Usage example
+# Usage example
 - `floor[ sqrt[ pow[ 2, log[ 154 ] ] ] ]` - Useless math
 - `sqrt[ 3**2 + 4**2 ]` - Pythagoras rule
 - `(238 && 156) == (238 and 156)` - Test logic
