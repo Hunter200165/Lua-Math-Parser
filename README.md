@@ -25,18 +25,18 @@ Math equations parser written in pure Lua
     - `int[ a ]` - Casts `a` to four bytes;
 3) Logical operators, all operators are bit-based (All is shown in priority decreasing order)
     - `not a` - NOT operator;
-    - `!a` - NOT operator (C-style);
+    - `~a` - NOT operator (C-style);
     - `a and b` - AND operator;
-    - `a && b` - AND operator (C-style);
+    - `a & b` - AND operator (C-style);
     - `a or b` - OR operator;
-    - `a || b` - OR operator (C-style);
+    - `a | b` - OR operator (C-style);
     - `a xor b` - XOR operator;
-    - `a ^ b` - XOR operator (C-style);
+    - `a ~^ b` - XOR operator (C-style);
     - `a shl b` - Shift Left operator;
     - `a << b` - Shift Left operator (C-style);
     - `a shr b` - Shift Right operator;
     - `a >> b` - Shift Right operator (C-style);
-4) `a ** b` -  Exponential operator: Raises `a` to the exponent of `b`. Same as `pow[ a, b ]`;
+4) `a ** b`/`a ^ b` -  Exponential operator: Raises `a` to the exponent of `b`. Same as `pow[ a, b ]`;
 5) Integer division operators:
     - `a div b` - DIV operator;
     - `a // b` - DIV operator (C-style);
@@ -51,6 +51,15 @@ Math equations parser written in pure Lua
 8) Equality operators (return 1 if equal, 0 otherwise):
     - `a = b` - Equality operator;
     - `a == b` - Equality operator (C-style);
+9) Boolean logic operators
+    - `!a` - NOT operator
+    - `a && b` - AND operator
+    - `a || b` - OR operator
+    - `a !^ b` - XOR operator
+    
+#Constants
+- `$pi` = `math.pi`;
+- `$e` = `math.exp(1)`;
     
 #Usage example
 - `floor[ sqrt[ pow[ 2, log[ 154 ] ] ] ]` - Useless math
