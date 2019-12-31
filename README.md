@@ -1,3 +1,6 @@
+# DEPRECATED AND DISCONTINUED. THIS REPOSITORY IS NOW ARCHIVED. 
+# Use HMathParser repository instead, where parser is updated
+
 # Lua-Math-Parser
 Math equations parser written in pure Lua
 
